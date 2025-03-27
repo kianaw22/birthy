@@ -18,10 +18,10 @@ var DBConfig = struct {
 	DBName   string
 	SSLMode  string
 }{
-	Host:     "localhost",
+	Host:     "dpg-cvir2ja4d50c73c51ph0-a",
 	Port:     "5432",
-	User:     "postgres",
-	Password: "1",
-	DBName:   "postgres",
+	User:     "birthyuser",
+	Password: "RbFFCqZB8FyLWkkzHf1ZyRH63EeQXNW4",
+	DBName:   "birthydb",
 	SSLMode:  "disable",
 }
