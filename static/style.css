@@ -1,50 +1,29 @@
-/* Apply Poppins font to the entire page */
+/* General styles */
 body {
-    font-family: 'Bungee Tint', sans-serif;
-    direction: ltr;
-    background-color: #cf2626;
-    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    text-align: center;
+    font-family: 'Bungee Tint', cursive;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-/* Container with border and clean design */
 .container {
-    margin-top: 50px;
+    width: 90%;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 50px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 12px;
-    border: 6px solid #470606;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-/* Container Styles */
-.container {
-    margin-top: 50px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
 
-/* Heading Styles */
+/* Heading styles */
 h1 {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 24px;
     color: #333;
-    margin-bottom: 20px;
 }
 
-/* Guitar Image */
+/* Guitar image styles */
 .guitar-image {
     width: 100%;
     max-width: 300px;
@@ -52,66 +31,81 @@ h1 {
     margin: 20px 0;
 }
 
-/* Progress Bar Styles */
+/* Progress bar container */
 .progress-container {
-    width: 80%;
+    width: 100%;
     background-color: #ddd;
-    margin: 20px auto;
     height: 30px;
     border-radius: 15px;
     overflow: hidden;
+    margin: 20px 0;
 }
 
+/* Progress bar */
 .progress-bar {
     height: 100%;
-    background-color: #760966;
+    background-color: #4caf50;
     line-height: 30px;
-    border-radius: 15px 0 0 15px;
+    text-align: center;
+    color: white;
 }
 
-/* Donation Form Styles */
+/* Donation form */
 .donate-form {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
+/* Input field */
 input[type="number"] {
     padding: 10px;
     font-size: 16px;
-    width: 200px;
-    margin-left: 10px;
-    border: 1px solid #ab2c13;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
     border-radius: 8px;
 }
 
-/* Button Styles */
+/* Donate button */
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #cf2626;
-    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #ff5722;
+    color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
 }
 
-/* Button Hover Effect */
 button:hover {
-    background-color: #ab2c13;
+    background-color: #e64a19;
 }
 
-/* Responsive Design for Mobile */
+/* Responsive Design - For Mobile Devices */
 @media (max-width: 600px) {
-    .container {
-        width: 90%;
-    }
-
     h1 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
-    input[type="number"],
+    .container {
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .guitar-image {
+        width: 80%;
+    }
+
+    .progress-container {
+        height: 25px;
+    }
+
     button {
-        width: 100%;
+        font-size: 16px;
     }
 }
