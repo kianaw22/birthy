@@ -6,12 +6,22 @@ import (
 
 	"github.com/kianaw22/birthy/internal/database"
 	"github.com/kianaw22/birthy/internal/handlers"
+	"github.com/kianaw22/birthy/models"
 )
+
+func runMigrations() {
+	db := database.GetDB()
+	err := db.AutoMigrate(&models.Donation{})
+	if err != nil {
+		log.Fatalf("❗️ Error running migrations: %v", err)
+	}
+	log.Println("✅ Migrations applied successfully!")
+}
 
 func main() {
 	// Initialize the database
 	database.InitDB()
-
+	runMigrations()
 	// Serve static files (CSS, JS, images, etc.)
 	fs := http.FileServer(http.Dir("static"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
