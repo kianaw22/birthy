@@ -1,0 +1,117 @@
+/* Apply Poppins font to the entire page */
+body {
+    font-family: 'Bungee Tint', sans-serif;
+    direction: ltr;
+    background-color: #cf2626;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container with border and clean design */
+.container {
+    margin-top: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 6px solid #470606;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Container Styles */
+.container {
+    margin-top: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Guitar Image */
+.guitar-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Progress Bar Styles */
+.progress-container {
+    width: 80%;
+    background-color: #ddd;
+    margin: 20px auto;
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #760966;
+    line-height: 30px;
+    border-radius: 15px 0 0 15px;
+}
+
+/* Donation Form Styles */
+.donate-form {
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    margin-left: 10px;
+    border: 1px solid #ab2c13;
+    border-radius: 8px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #cf2626;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #ab2c13;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input[type="number"],
+    button {
+        width: 100%;
+    }
+}

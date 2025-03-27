@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift for Dear Amirhossein</title>
+
+    <!-- Add Google Font (Bungee Tint) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+
+    <title>Gift for Dear Amirhossein</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Help Amirhossein Buy His Dream Electric Guitar for His Birthday!</h1>
+        <img src="/static/guitar.jpg" alt="Electric Guitar" class="guitar-image">
+
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 50%;"></div>
+        </div>
+        <p>
+            By now {{.TotalAmount}} Toman collected from {{.TargetAmount}}
+        </p>
+
+        <form action="/donate" method="POST" class="donate-form">
+            <input type="number" name="amount" placeholder="Enter amount in Toman" required>
+            <button type="submit">Donate Now</button>
+        </form>
+    </div>
+</body>
+
+</html>
